@@ -26,7 +26,7 @@ struct ContentView: View {
                                 if myNotes.folders.count > 0 {
                                     FolderCell(name: "All on My iPhone")
                                 }
-                                FolderCell(name: "Notes")
+                                FolderCell(name: "iCloud")
                                 ForEach(myNotes.folders) { folder in
                                     FolderCell(name: folder.name)
                                 }
