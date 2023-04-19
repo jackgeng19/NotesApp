@@ -42,9 +42,10 @@ struct NewFolderView: View {
                         }){
                             Text("Cancel")
                                 .frame(maxWidth: .infinity)
+                                
                         }
                         Button(action: {
-                            myNotes.folders.append(Folder(name: newFolderName))
+                            myNotes.folders.append(Folder(name: newFolderName, notes: [Note(text: "New Note")]))
                             showing.toggle()
                         }){
                             Text("Save")

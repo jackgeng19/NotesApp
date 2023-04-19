@@ -14,6 +14,8 @@
 		4FB6170529EF03A300F3D0EE /* MyNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6170429EF03A300F3D0EE /* MyNotes.swift */; };
 		4FB6170729EF510000F3D0EE /* FolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6170629EF510000F3D0EE /* FolderCell.swift */; };
 		4FB6170C29EF51F400F3D0EE /* NewFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6170B29EF51F400F3D0EE /* NewFolderView.swift */; };
+		4FB6170E29EF664900F3D0EE /* SingleNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6170D29EF664900F3D0EE /* SingleNoteView.swift */; };
+		4FB6171029EF89AA00F3D0EE /* FolderNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6170F29EF89AA00F3D0EE /* FolderNotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4FB6170429EF03A300F3D0EE /* MyNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotes.swift; sourceTree = "<group>"; };
 		4FB6170629EF510000F3D0EE /* FolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCell.swift; sourceTree = "<group>"; };
 		4FB6170B29EF51F400F3D0EE /* NewFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFolderView.swift; sourceTree = "<group>"; };
+		4FB6170D29EF664900F3D0EE /* SingleNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteView.swift; sourceTree = "<group>"; };
+		4FB6170F29EF89AA00F3D0EE /* FolderNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderNotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				4F01661C29EEF3A100AD4219 /* ContentView.swift */,
 				4FB6170629EF510000F3D0EE /* FolderCell.swift */,
 				4FB6170B29EF51F400F3D0EE /* NewFolderView.swift */,
+				4FB6170D29EF664900F3D0EE /* SingleNoteView.swift */,
+				4FB6170F29EF89AA00F3D0EE /* FolderNotesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,11 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB6170E29EF664900F3D0EE /* SingleNoteView.swift in Sources */,
 				4F01661D29EEF3A100AD4219 /* ContentView.swift in Sources */,
 				4F01661B29EEF3A100AD4219 /* notesApp.swift in Sources */,
 				4FB6170529EF03A300F3D0EE /* MyNotes.swift in Sources */,
 				4FB6170C29EF51F400F3D0EE /* NewFolderView.swift in Sources */,
 				4FB6170729EF510000F3D0EE /* FolderCell.swift in Sources */,
+				4FB6171029EF89AA00F3D0EE /* FolderNotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
