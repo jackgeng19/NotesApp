@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1BAE8452-0583-420F-B345-1F8B9B90D99D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EE159A3-E73E-45D3-97BC-798CD14125DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "notes/Model/MyNotes.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "2EE159A3-E73E-45D3-97BC-798CD14125DC - ba13c0c60bab299a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for test"
+                  moduleName = "notes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackgengqc/code/appteam/academy/s23-academy-final-project-jackgeng19/notes/notes/Model/MyNotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "2EE159A3-E73E-45D3-97BC-798CD14125DC - 38b620af6c83a9d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "notes.test.unsafeMutableAddressor : Swift.Array&lt;notes.Folder&gt;"
+                  moduleName = "notes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackgengqc/code/appteam/academy/s23-academy-final-project-jackgeng19/notes/notes/Model/MyNotes.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

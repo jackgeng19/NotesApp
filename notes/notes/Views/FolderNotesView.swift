@@ -10,6 +10,7 @@ import SwiftUI
 struct FolderNotesView: View {
     var folder: Folder
     @State private var showingNewNoteView = false
+    @ObservedObject var myNotes: MyNotes
 
     var body: some View {
         List {
@@ -18,12 +19,13 @@ struct FolderNotesView: View {
             }
             .onDelete(perform: { indexSet in
                 // Remove notes at the specified indices
+                myNotes.removeNote(index: indexSet)
             })
         }
         .navigationTitle(folder.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(destination: SingleNoteView(), isActive: $showingNewNoteView) {
+                NavigationLink(destination: SingleNoteView(myNotes: myNotes), isActive: $showingNewNoteView) {
                     Button(action: {
                         showingNewNoteView = true
                     }) {
@@ -44,7 +46,11 @@ struct FolderNotesView_Previews: PreviewProvider {
             Note(text: "Physics"),
             Note(text: "Chemistry"),
         ])
-        FolderNotesView(folder: sampleFolder)
+        
+        let testNotes = MyNotes()
+        testNotes.folders = [sampleFolder]
+        
+        return FolderNotesView(folder: sampleFolder, myNotes: testNotes)
     }
 }
 

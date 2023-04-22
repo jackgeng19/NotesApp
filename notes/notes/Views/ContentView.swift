@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var search: String = ""
     @State var newFolderName: String = ""
     @State var showing = false
+    @State var allOnMyiPhone = false
 
     
     var body: some View {
@@ -35,12 +36,25 @@ struct ContentView: View {
                             .padding(.bottom, 7)
                             .padding(.leading, -15)
                             .foregroundColor(.black)){
-                                if myNotes.folders.count > 0 {
-                                    FolderCell(name: "All on My iPhone")
+                                if (myNotes.folders.count >= 2) {
+//                                    Button(action: { allOnMyiPhone = true }) {
+//                                        FolderCell(name: "All on My iPhone")
+//                                    }
+//                                    var folder1 = myNotes.folders[0]
+//                                    var folder2 = myNotes.folders[1]
+//                                    ForEach(folder2.notes){ note in
+//                                        folder1.notes.append(note)
+//                                    }
+                                    NavigationLink("All on My iPhone", destination:  FolderNotesView(folder: mergeFolder(f1: myNotes.folders[0], f2: myNotes.folders[1]), myNotes: myNotes), isActive: $allOnMyiPhone);
+//                                    Button {
+////                                        FolderNotesView(folder: myNotes.folders[0], myNotes: myNotes)
+//                                    } label: {
+//                                        FolderCell(name: "All on My iPhone")
+//                                    }
                                 }
                                 FolderCell(name: "iCloud")
                                 ForEach(myNotes.folders) { folder in
-                                    NavigationLink(destination: FolderNotesView(folder: folder)) {
+                                    NavigationLink(destination: FolderNotesView(folder: folder, myNotes: myNotes)) {
                                         FolderCell(name: folder.name)
                                     }
                                 }
@@ -64,7 +78,7 @@ struct ContentView: View {
                             .onTapGesture {
                                 showing.toggle()
                             }
-                        NavigationLink(destination: SingleNoteView()){
+                        NavigationLink(destination: SingleNoteView(myNotes: myNotes)){
                             Image(systemName: "square.and.pencil")
                                 .padding(.trailing, 5)
                         }
