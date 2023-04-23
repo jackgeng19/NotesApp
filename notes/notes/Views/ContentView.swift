@@ -78,7 +78,7 @@ struct ContentView: View {
                             .onTapGesture {
                                 showing.toggle()
                             }
-                        NavigationLink(destination: SingleNoteView(myNotes: myNotes)){
+                        NavigationLink(destination: SingleNoteView(input: " ", myNotes: myNotes)){
                             Image(systemName: "square.and.pencil")
                                 .padding(.trailing, 5)
                         }

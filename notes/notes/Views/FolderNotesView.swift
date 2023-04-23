@@ -14,8 +14,11 @@ struct FolderNotesView: View {
 
     var body: some View {
         List {
-            ForEach(folder.notes) { note in
-                Text(note.text)
+            ForEach(0..<folder.notes.count, id: \.self) { index in
+                let note = folder.notes[index]
+                NavigationLink(destination: SingleNoteView(input: note.text, myNotes: myNotes,folderIndex: 0, noteIndex: index)) {
+                    Text(note.text)
+                }
             }
             .onDelete(perform: { indexSet in
                 // Remove notes at the specified indices
@@ -25,7 +28,7 @@ struct FolderNotesView: View {
         .navigationTitle(folder.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(destination: SingleNoteView(myNotes: myNotes), isActive: $showingNewNoteView) {
+                NavigationLink(destination: SingleNoteView(input: " ", myNotes: myNotes), isActive: $showingNewNoteView) {
                     Button(action: {
                         showingNewNoteView = true
                     }) {
