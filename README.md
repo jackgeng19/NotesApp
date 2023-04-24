@@ -1,6 +1,7 @@
 <body>
     <h1>📝 Notes App</h1>
     <h4>After a semester-long journey with iOS Academy in the App Team, I rebuilt a simple yet powerful iOS note-taking application as it's the most-frequently-used app in my daily life. It allows users to create, edit, and manage notes across multiple folders just like Apple's Notes App.</h4>
+    <h3>Check the demo!</h3>https://www.loom.com/share/18e3ac9ebfbf4d2b9d670c776aa09357
     <h2>🚀 Features</h2>
     <ul>
         <li>User-friendly interface</li>
